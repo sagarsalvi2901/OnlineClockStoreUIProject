@@ -1,0 +1,9 @@
+MaxCDN is org that provide content delivery network using its servers.
+BootstrapCDN was founded in 2012 by David Henzel and Justin Dorfman at MaxCDN.
+BootstrapCDN is also a public content delivery network. can load CSS, 
+JavaScript, from its servers.
+
+The WebP format is a new image format from Google which employs both lossy (a trade-off between quality and size) 
+as well as lossless (reduction in size with no compromise in quality) compression techniques.
+WebP lossless images are 26% smaller in size compared to PNGs. 
+WebP lossy images are 25-34% smaller than comparable JPEG images.

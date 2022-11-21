@@ -1,0 +1,139 @@
+<html>
+
+<head>
+<title>SS Watches</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script>
+$(function(){
+$('#firstnum,#secondnum,#thirdnum,#fourthnum').keyup(function(e){
+if($(this).val().length==$(this).attr('maxlength'))
+$(this).next(':input').focus()
+})
+})
+
+
+</script>
+
+</head>
+
+<body>
+<nav class="navbar navbar-light bg-light">
+  <span class="navbar-brand mb-0 h1"> SS WATCHES. Great watches. Great prices.</span>
+</nav>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item ">
+      <a class="nav-link" href="homepage.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="menswatches.html">Men's</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="womenswatches.html">Women's</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="kidswatches.html">Kid's</a>
+    </li>
+ <li class="nav-item">
+      <a class="nav-link" href="login.html">Login</a>
+    </li>
+<li class="nav-item">
+      <a class="nav-link" href="signup.html">Signup</a>
+    </li>
+<li class="nav-item">
+      <a class="nav-link" href="about.html">About</a>
+    </li>
+  </ul>
+</nav>
+<br>
+<br>
+<form>
+<table cellpadding=15 border=1 align="Center">
+    
+      <tr>
+        <td align="center" colspan=2><b>Web Payment<b></td>
+        
+        
+      </tr>
+    
+   
+      <tr>
+        <td>Cardholder's Name</td>
+        <td><input type="text" style="width:25ch;" onkeypress="return event.charCode >= 65 && event.charCode <= 90 || event.charCode == 32" required/></td>
+      
+      </tr>
+
+     <tr>
+        <td>Card Number</td>
+        <td>
+<input type="text" id="firstnum"style="width:5ch;" maxlength="4" onkeypress='return event.charCode >= 48 && event.charCode <= 57' required/>
+-
+<input type="text" id="secondnum" style="width:5ch;" maxlength="4" onkeypress='return event.charCode >= 48 && event.charCode <= 57' required/>
+-
+<input type="text" id="thirdnum" style="width:5ch;" maxlength="4" onkeypress='return event.charCode >= 48 && event.charCode <= 57' required/>
+-
+<input type="text" id="fourthnum" style="width:5ch;" maxlength="4" onkeypress='return event.charCode >= 48 && event.charCode <= 57' required/>     
+      </tr>
+      <tr>
+        <td>Expiry Date</td>
+        <td>
+<select>
+<option>Jan</option>
+<option>Feb</option>
+<option>Mar</option>
+<option>Apr</option>
+<option>May</option>
+<option>Jun</option>
+<option>Jul</option>
+<option>Aug</option>
+<option>Sep</option>
+<option>Oct</option>
+<option>Nov</option>
+<option>Dec</option>
+</select>
+<select>
+<option>2019</option>
+<option>2020</option>
+<option>2021</option>
+<option>2022</option>
+<option>2023</option>
+<option>2024</option>
+
+</select>
+
+</td>
+        
+      </tr>
+ <tr>
+        <td>CVV</td>
+        <td>
+	<input type="password" style="width:4ch;" maxlength="3" onkeypress='return event.charCode >= 48 && event.charCode <= 57' required/>
+	</td>
+        
+      </tr>
+ <tr>
+        <td>Amount</td>
+        <td></td>
+        
+      </tr>
+
+
+ 
+
+
+<tr>
+        <td align="center" colspan=2 align="center"><input type= "submit" value="Make Payment">&nbsp;&nbsp;<input type="reset" value="Clear All"></td>
+        
+        
+      </tr>
+    
+  </table>
+</form>
+</body>
+</html>

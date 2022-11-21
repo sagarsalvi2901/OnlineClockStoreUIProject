@@ -1,0 +1,320 @@
+<html>
+<head>
+  <title>SS Watches</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script>
+function allk() 
+{
+document.getElementById("onet").style.display = "block";
+document.getElementById("twot").style.display = "block";
+document.getElementById("threet").style.display = "block";
+document.getElementById("fourt").style.display = "block";
+}
+function onek() 
+{
+document.getElementById("onet").style.display = "block";
+document.getElementById("twot").style.display = "none";
+document.getElementById("threet").style.display = "none";
+document.getElementById("fourt").style.display = "none";
+}
+function twok() 
+{
+document.getElementById("twot").style.display = "block";;
+document.getElementById("onet").style.display = "none";
+document.getElementById("threet").style.display = "none";
+document.getElementById("fourt").style.display = "none";
+}
+function threek() 
+{
+document.getElementById("threet").style.display = "block";;
+document.getElementById("onet").style.display = "none";
+document.getElementById("twot").style.display = "none";
+document.getElementById("fourt").style.display = "none";
+}
+function fourk() 
+{
+document.getElementById("fourt").style.display = "block";
+document.getElementById("onet").style.display = "none";
+document.getElementById("twot").style.display = "none";
+document.getElementById("threet").style.display = "none";
+}
+</script>
+
+
+
+
+
+<style>
+ .zoom {
+  
+  transition: transform .2s; /* Animation */
+  width: 128px;
+  height: 128px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(2.0); /* (150% zoom) */
+}
+</style>
+</style>
+</head>
+
+
+
+
+<body >
+
+
+<nav class="navbar navbar-light bg-light">
+  <span class="navbar-brand mb-0 h1"> SS WATCHES. Great watches. Great prices.</span>
+</nav>
+
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="homepage.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="menswatches.html">Men's</a>
+    </li>
+    <li class="nav-item  active">
+      <a class="nav-link" href="womenswatches.html">Women's</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="kidswatches.html">Kid's</a>
+    </li>
+ <li class="nav-item">
+      <a class="nav-link" href="login.html">Login</a>
+    </li>
+<li class="nav-item">
+      <a class="nav-link" href="signup.html">Signup</a>
+    </li>
+<li class="nav-item">
+      <a class="nav-link" href="about.html">About</a>
+    </li>
+  </ul>
+</nav>
+<br>
+
+
+
+
+<div style="margin-left:25px; width:100%;">
+filter by price :
+<input type="button" value="show all watches" onclick="allk()">
+<input type="button" value="under Rs.999" onclick="onek()">
+<input type="button" value="Rs.1000 to Rs.1999" onclick="twok()">
+<input type="button" value="Rs.2000 to Rs.2999" onclick="threek()">
+<input type="button" value="Rs.3000 to Rs.3999" onclick="fourk()">
+<br>
+<br>
+
+
+<form method="post" action="ordersummary.html">
+
+<div id="onet"> <h5> Watches under Rs.999 </h5>
+
+<table class="table-hover" >
+    <thead>
+      <tr>
+        <th>Series&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+        <th>Rep. Image</th>
+        <th>Retail Price&nbsp;&nbsp;&nbsp;&nbsp;</th>
+	<th>Details</th>
+	<th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+	<td>WS0001 </td>
+        <td align="centre"><img class="zoom" src="media/w1.webp"></td>
+	<td>Rs.699</td>
+        <td>Essentials Silver Grey Dial Leather Strap</td> 
+	<td>&nbsp;&nbsp;<input type = "submit" value="Order Now"></td>  
+      </tr>
+      <tr>
+        <td>WS0002 </td>
+        <td align="centre"><img class="zoom" src="media/w2.webp"></td>
+	<td>Rs.699</td>
+        <td>Essentials Gold Grey Dial Leather Strap</td>
+	<td>&nbsp;&nbsp;<input type = "submit" value="Order Now"></td>
+      </tr>
+      <tr>
+        <td>WS0003 </td>
+        <td align="centre"><img class="zoom" src="media/w3.webp"></td>
+	<td>Rs.899</td>
+        <td>Essentials Pink Dial Stainless Steel Strap</td>
+	<td>&nbsp;&nbsp;<input type = "submit" value="Order Now"></td>
+      </tr>
+	<tr>
+        <td>WS0004 </td>
+        <td align="centre"><img class="zoom" src="media/w4.webp"></td>
+	<td>Rs.899</td>
+        <td>Essentials Silver Dial Stainless Steel Strap </td>
+	<td>&nbsp;&nbsp;<input type = "submit" value="Order Now"></td>
+      </tr>
+    </tbody>
+  </table>
+
+<br>
+</div>
+
+
+
+
+
+
+<div id="twot"> <h5> Watches between Rs.1000 and Rs.1999 </h5>
+<table class="table-hover" >
+    <thead>
+      <tr>
+        <th>Series&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+        <th>Rep. Image</th>
+        <th>Retail Price&nbsp;&nbsp;&nbsp;</th>
+	<td>&nbsp;&nbsp;<input type = "submit" value="Order Now"></td>
+	<th>Details</th>
+	<th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+	<td>WS0011 </td>
+        <td align="centre"><img class="zoom" src="media/w5.webp"></td>
+	<td>Rs.1599</td>
+        <td>Tic Tac Toe Pretty Pine Analog Watch </td>   
+	<td>&nbsp;&nbsp;<input type = "submit" value="Order Now"></td>
+      </tr>
+      <tr>
+        <td>WS0012 </td>
+        <td align="centre"><img class="zoom" src="media/w6.webp"></td>
+	<td>Rs.1599</td>
+        <td>Tic Tac Toe Frosted Cherry Analog Watch</td>
+	<td>&nbsp;&nbsp;<input type = "submit" value="Order Now"></td>
+      </tr>
+      <tr>
+        <td>WS0013 </td>
+        <td align="centre"><img class="zoom" src="media/w7.webp"></td>
+	<td>Rs.1599</td>
+        <td>Tic Tac Toe Smokey Pokey Analog Watch</td>
+	<td>&nbsp;&nbsp;<input type = "submit" value="Order Now"></td>
+      </tr>
+      <tr>
+        <td>WS0014 </td>
+        <td align="centre"><img class="zoom" src="media/w8.webp"></td>
+	<td>Rs.1599</td>
+        <td>Tic Tac Toe Permafrost Blue Analog Watch</td>
+	<td>&nbsp;&nbsp;<input type = "submit" value="Order Now"></td>
+      </tr>
+    </tbody>
+  </table>
+<br>
+</div>
+
+
+
+
+
+<div id="threet"> <h5> Watches between Rs.2000 and Rs.2999 </h5>
+<table class="table-hover" >
+    <thead>
+      <tr>
+        <th>Series&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+        <th>Rep. Image</th>
+        <th>Retail Price&nbsp;&nbsp;&nbsp;&nbsp;</th>
+	<th>Details</th>
+	<th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+	<td>WS0031 </td>
+        <td align="centre"><img class="zoom" src="media/w9.webp"></td>
+	<td>Rs.2199</td>
+        <td>Champagne Dial Golden Stainless Steel </td>   
+	<td>&nbsp;&nbsp;<input type = "submit" value="Order Now"></td>
+      </tr>
+      <tr>
+        <td>WS0032 </td>
+        <td align="centre"><img class="zoom" src="media/w10.webp"></td>
+	<td>Rs.2199</td>
+        <td>Maroon Dial Golden Stainless Steel </td>
+	<td>&nbsp;&nbsp;<input type = "submit" value="Order Now"></td>
+      </tr>
+      <tr>
+        <td>WS0033 </td>
+        <td align="centre"><img class="zoom" src="media/w11.webp"></td>
+	<td>Rs.2799</td>
+        <td>White Dial Golden Metal Strap Watch</td>
+	<td>&nbsp;&nbsp;<input type = "submit" value="Order Now"></td>
+      </tr>
+	<tr>
+        <td>WS0034 </td>
+        <td align="centre"><img class="zoom" src="media/w12.webp"></td>
+	<td>Rs.2899</td>
+        <td>Champagne Dial Golden Metal Strap Watch</td>
+	<td>&nbsp;&nbsp;<input type = "submit" value="Order Now"></td>
+      </tr>
+    </tbody>
+  </table>
+<br></div>
+
+
+
+
+
+
+
+<div id="fourt"> <h5> Watches between Rs.3000 and Rs.3999 </h5>
+<table class="table-hover" >
+    <thead>
+      <tr>
+        <th>Series&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+        <th>Rep. Image</th>
+        <th>Retail Price&nbsp;&nbsp;&nbsp;&nbsp;</th>
+	<th>Details</th>
+	<th></th>
+      </tr>
+    </thead>
+    <tbody>
+<tr>
+        <td>WS0041 </td>
+        <td align="centre"><img class="zoom" src="media/w15.webp"></td>
+	<td>Rs.3699</td>
+        <td>Petite Rose Gold Metal Strap Watch</td>
+	<td>&nbsp;&nbsp;<input type = "submit" value="Order Now"></td>
+      </tr>
+	 <tr>
+        <td>WS0042 </td>
+        <td align="centre"><img class="zoom" src="media/w16.webp"></td>
+	<td>Rs.3799</td>
+        <td>Petite Golden Metal Strap Watch</td>
+	<td>&nbsp;&nbsp;<input type = "submit" value="Order Now"></td>
+      </tr>
+      <tr>
+	<td>WS0043 </td>
+        <td align="centre"><img class="zoom" src="media/w13.webp"></td>
+	<td>Rs.3999</td>
+        <td>Charm Maroon Dial Golden Metal Strap Watch</td>  
+	<td>&nbsp;&nbsp;<input type = "submit" value="Order Now"></td> 
+      </tr>
+      <tr>
+        <td>WS0044 </td>
+        <td align="centre"><img class="zoom" src="media/w14.webp"></td>
+	<td>Rs.3999</td>
+        <td>Charm Black Dial Golden Metal Strap Watch</td>
+	<td>&nbsp;&nbsp;<input type = "submit" value="Order Now"></td>
+      </tr>
+      
+    </tbody>
+  </table>
+</form>
+</div>
+</body>
+</html>
